@@ -299,7 +299,7 @@ python src/predict.py --image ./samples/download.png --model ./models/traffic_si
 
 Avant tout entraînement, l'analyse exploratoire révèle un **déséquilibre marqué** entre les 43 classes du dataset : certaines classes dépassent 2000 images tandis que d'autres n'en comptent que quelques centaines.
 
-![Distribution des images par classe](distribution_classes.png)
+![Distribution des images par classe](distribution_classes)
 
 > *Figure — Distribution du nombre d'images par identifiant de classe (0 à 42). Ce déséquilibre justifie l'usage de techniques d'augmentation de données et/ou de pondération des classes lors de l'entraînement.*
 
@@ -307,13 +307,13 @@ Avant tout entraînement, l'analyse exploratoire révèle un **déséquilibre ma
 
 Le modèle reçoit une image de panneau annonçant un feu tricolore et retourne ses **Top-3 prédictions** classées par probabilité.
 
-![Prédiction feu tricolore](prediction_feu_tricolore.png)
+![Prédiction feu tricolore](prediction_feu_tricolore)
 
 > *Figure — Le modèle prédit la **Classe 26** avec une confiance de **100.0 %**, loin devant les classes 17 et 25 (0.0 %). La prédiction est nette et sans ambiguïté.*
 
 ### 🔮 Exemple de prédiction n°2 — Passage piéton
 
-![Prédiction passage piéton](prediction_passage_pieton.png)
+![Prédiction passage piéton](prediction_passage_pieton)
 
 > **Figure 6.7** — Exemple de prédiction : panneau passage piéton et Top-3 prédictions associées. Le modèle identifie correctement la **Classe 27** avec **100.0 %** de confiance, devant les classes 11 et 18 (0.0 % chacune).
 
