@@ -172,35 +172,6 @@ data/
     └── GT-final_test.csv             # Vérité terrain du test (Filename ; ClassId)
 ```
 
-### Structure cible recommandée pour l'industrialisation du projet
-
-```
-Traffic-Sign-Recognition/
-│
-├── data/
-│   └── traffic_sign_dataset/         # Dataset GTSRB (non versionné, voir .gitignore)
-│
-├── notebooks/
-│   └── Traffic-Sign-Recognition.ipynb
-│
-├── src/
-│   ├── preprocessing.py              # correct_all_paths, preprocess_images, get_class
-│   ├── model.py                      # build_cnn_model, learning_rate_scheduler
-│   ├── train.py                      # Script d'entraînement (avec et sans augmentation)
-│   ├── evaluate.py                   # Chargement du test set et calcul de l'accuracy
-│   └── predict.py                    # Inférence sur une nouvelle image, Top-3
-│
-├── models/
-│   ├── model.h5                      # Modèle sans augmentation de données
-│   └── model_aug.h5                  # Modèle avec augmentation de données (meilleur résultat)
-│
-├── assets/
-│   └── classes.jpg
-│
-├── requirements.txt
-└── README.md
-```
-
 ### Pipeline de traitement
 
 ```
